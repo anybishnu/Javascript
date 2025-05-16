@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#light_bulb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+
+  .heading {
+    font-size: 2rem;
+  }
+  .bulbImg {
+    width: 8rem;
+  }
+  .switch {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 2rem;
+    // display: inline-block;
+    position: relative;
+
+    .inputBox {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+    .switch_circle {
+      background-color: gray;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: 0.4s;
+
+    }
+    .switch_circle::before {
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: white;
+      position: absolute;
+      border-radius: 30rem;
+      left: 0.5rem;
+      bottom: 0.3rem;
+      transition: 0.4s;
+    }
+    input:checked + .switch_circle {
+      background-color: green;
+    }
+    input:checked + .switch_circle::before {
+        transform: translateX(1.5rem);
+      }
+  }
+}
