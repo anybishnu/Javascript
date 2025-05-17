@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.4s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.random_color_box {
+  width: 25rem;
+  height: 17rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: white;
+}
+.random_color_box .heading {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.random_color_box .change_color_btn {
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: 600;
+}
+.random_color_box .copy_color_btn {
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: 600;
+}
+.random_color_box .color_code {
+  font-weight: bold;
+}
+.random_color_box .change_color_btn:active {
+  scale: 0.95;
+}
+.random_color_box .copy_color_btn:active {
+  scale: 0.95;
+}
+.random_color_box .hidden {
+  display: none;
+}
