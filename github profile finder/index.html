@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Finder</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+
+    
+<!-- card start -->
+    <div class="w-full max-w-xl bg-white shadow-2xl rounded-2xl p-8 space-y-8">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-gray-800">GitHub User Search</h1>
+        <p class="text-gray-500 mt-2">
+          Enter a GitHub username to see the profile details
+        </p>
+      </div>
+
+      <form class="flex items-center gap-4">
+        <input
+          type="text"
+          placeholder="Enter GitHub username"
+          class="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none searchInput"
+        />
+        <button
+          type="submit"
+          class="px-6 py-3 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition duration-300 submitBtn"
+        >
+          Search
+        </button>
+      </form>
+
+      <!-- Dummy GitHub Profile Data -->
+      <div id="user-profile" class="mt-6">
+        <div
+          class="flex flex-col md:flex-row items-center gap-6 bg-gray-50 p-6 rounded-xl border card"
+        >
+          
+        </div>
+      </div>
+    </div>
+<!-- card end -->
+
+
+
+
+
+
+
+    <!-- <div class="w-full max-w-xl bg-white shadow-2xl rounded-2xl p-8 space-y-8">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-gray-800">GitHub User Search</h1>
+        <p class="text-gray-500 mt-2">
+          Enter a GitHub username to see the profile details
+        </p>
+      </div>
+
+      <form class="flex items-center gap-4">
+        <input
+          type="text"
+          placeholder="Enter GitHub username"
+          class="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="px-6 py-3 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition duration-300"
+        >
+          Search
+        </button>
+      </form> -->
+
+    <!-- Dummy GitHub Profile Data -->
+    <!-- <div id="user-profile" class="mt-6">
+        <div
+          class="flex flex-col md:flex-row items-center gap-6 bg-gray-50 p-6 rounded-xl border"
+        >
+          <img
+            src="https://avatars.githubusercontent.com/u/583231?v=4"
+            alt="User Avatar"
+            class="w-24 h-24 rounded-full shadow-md border"
+          />
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">The Octocat</h2>
+            <p class="text-gray-500">@octocat</p>
+            <p class="mt-2 text-gray-600">
+              Just a mysterious creature who loves to code on GitHub.
+            </p>
+            <div class="mt-4 flex gap-6 text-sm text-gray-600">
+              <span
+                ><strong class="text-gray-800 font-semibold">8</strong>
+                Repos</span
+              >
+              <span
+                ><strong class="text-gray-800 font-semibold">9800</strong>
+                Followers</span
+              >
+              <span
+                ><strong class="text-gray-800 font-semibold">9</strong>
+                Following</span
+              >
+            </div>
+            <div class="mt-4 text-sm text-gray-500">
+              <p>
+                <span class="font-medium text-gray-700">Location:</span> San
+                Francisco
+              </p>
+              <p>
+                <span class="font-medium text-gray-700">Blog:</span>
+                <a
+                  href="https://github.blog"
+                  class="text-blue-600 hover:underline"
+                  >github.blog</a
+                >
+              </p>
+              <p>
+                <span class="font-medium text-gray-700">Company:</span> GitHub
+              </p>
+              <p>
+                <span class="font-medium text-gray-700">Joined:</span> Jan 25,
+                2011
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
